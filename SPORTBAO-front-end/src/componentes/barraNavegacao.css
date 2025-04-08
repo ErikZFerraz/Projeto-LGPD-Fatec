@@ -1,0 +1,54 @@
+/* Estilo da barra de navegação */
+.navbar {
+    background-color: black !important; /* Cor de fundo da navbar */
+    padding: 10px 20px; /* Adicionando um pouco de espaçamento para deixar a navbar mais espaçada */
+}
+
+/* Tamanho da fonte e cor dos links na navbar */
+.navbar-brand,
+.nav-link,
+.navbar-nav .nav-item .nav-link,
+.navbar-nav .nav-item .nav-dropdown .nav-link {
+    color: #e9b300 !important;
+    font-size: 26px; /* Aumentando o tamanho da fonte */
+    font-weight: 500; /* Deixando a fonte um pouco mais pesada */
+}
+
+/* Tamanho maior e estilo para os links no hover */
+.navbar-nav .nav-item .nav-dropdown .nav-link:hover {
+    color: #e9b300 !important;
+    font-size: 25px; /* Tamanho da fonte um pouco maior no hover */
+}
+
+/* Estilo do logo */
+.logo-nome {
+    margin-left: -80px;
+    margin-right: 52px;
+}
+
+.logo-img {
+    height: 125px; /* Aumentando o tamanho do logo */
+    width: 125px;
+    margin-left: -50px;
+    margin-right: 100px;
+}
+
+/* Estilo do menu dropdown */
+.navbar-nav .nav-item .dropdown-menu {
+    background-color: black !important; /* Cor de fundo do menu dropdown */
+    border-radius: 5px; /* Adicionando borda arredondada */
+}
+
+/* Estilo dos itens do dropdown */
+.navbar-nav .nav-item .dropdown-item {
+    color: #e9b300 !important;
+    font-size: 26px; /* Tamanho da fonte dos itens do dropdown */
+    font-weight: 400; /* Deixando a fonte mais leve para itens do dropdown */
+}
+
+/* Hover nos itens do dropdown */
+.navbar-nav .nav-item .dropdown-item:hover {
+    background-color: black !important;
+    color: #e9b300 !important;
+    font-size: 25px; /* Aumentando o tamanho da fonte no hover */
+}
