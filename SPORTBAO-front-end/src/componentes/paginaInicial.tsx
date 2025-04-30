@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Carrosel, Intro } from "./home";
 
-// Função para exibir o aviso de cookies
+
+
+// Componente de aviso de cookies
 const AvisoCookies = ({ onAceitarCookies }: { onAceitarCookies: () => void }) => {
   return (
     <div
@@ -17,21 +19,30 @@ const AvisoCookies = ({ onAceitarCookies }: { onAceitarCookies: () => void }) =>
         zIndex: 9999,
       }}
     >
-      <p>
-        Este site utiliza cookies para melhorar sua experiência.{" "}
+      <p style={{ margin: 0 }}>
+        Este site utiliza cookies para melhorar sua experiência.
         <button
           style={{
             backgroundColor: "#28a745",
             color: "white",
             border: "none",
             padding: "5px 10px",
+            marginLeft: "10px",
             cursor: "pointer",
+            borderRadius: "4px",
           }}
           onClick={onAceitarCookies}
         >
           Aceitar
         </button>
-        <a href="/politica-de-privacidade" style={{ marginLeft: "10px" }}>
+        <a
+          href="/politicaDePrivacidade"
+          style={{
+            marginLeft: "15px",
+            color: "#0056b3",
+            textDecoration: "underline",
+          }}
+        >
           Saiba mais
         </a>
       </p>
@@ -39,20 +50,30 @@ const AvisoCookies = ({ onAceitarCookies }: { onAceitarCookies: () => void }) =>
   );
 };
 
+// Componente principal da página inicial
 function Inicio() {
   const [cookiesAceitos, setCookiesAceitos] = useState(false);
 
+  // Verifica no carregamento inicial se o usuário já aceitou os cookies
+  useEffect(() => {
+    const consentimento = localStorage.getItem("cookiesAceitos");
+    if (consentimento === "true") {
+      setCookiesAceitos(true);
+    }
+  }, []);
+
+  // Ao aceitar os cookies
   const aceitarCookies = () => {
     setCookiesAceitos(true);
-    // Aqui você pode salvar a escolha do usuário (por exemplo, em localStorage ou via backend)
-    alert("Cookies aceitos!");
+    localStorage.setItem("cookiesAceitos", "true");
   };
 
   return (
     <>
-      {/* Exibe o aviso de cookies se ainda não foi aceito */}
+      {/* Aviso de cookies só aparece se ainda não aceitou */}
       {!cookiesAceitos && <AvisoCookies onAceitarCookies={aceitarCookies} />}
 
+      {/* Conteúdo principal da home */}
       <Carrosel />
       <Intro />
     </>

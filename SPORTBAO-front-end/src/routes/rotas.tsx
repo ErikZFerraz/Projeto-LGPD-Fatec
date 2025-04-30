@@ -7,6 +7,8 @@ import AdicionarTelefone from "../componentes/adicionarTelefone";
 import { Carrosel, Intro } from "../componentes/home";
 import Inicio from "../componentes/paginaInicial";
 import Dashboard from "../componentes/dashboard";
+import PoliticaDePrivacidade from "../componentes/politicaDePrivacidade"; 
+
 
 export const Rotas = () => {
 return (
@@ -22,6 +24,9 @@ return (
 
 <Route path='/dashboard' element={<Dashboard />} />
 <Route path='/' element={<Navigate to={'/home'} />} />
+
+<Route path="/politica-de-privacidade" element={<PoliticaDePrivacidade />} />
+
 </Routes>
 </BrowserRouter>
 )

@@ -7,6 +7,9 @@ import { Rotas } from './routes/rotas';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import BarraNavegacao from './componentes/barraNavegacao';
+import PoliticaDePrivacidade from "../componentes/politicaDePrivacidade"; 
+
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
