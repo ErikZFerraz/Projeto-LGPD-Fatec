@@ -1,0 +1,68 @@
+import { ProductType } from "./types";
+
+export const basketballProducts: ProductType[] = [
+  {
+    id: 1,
+    name: "Creatina Monohidratada 250g",
+    href: "#",
+    price: "R$89,90",
+    imageSrc: "/1.png",
+    imageAlt: "Pote de creatina monohidratada para aumento de força e desempenho.",
+  },
+  {
+    id: 2,
+    name: "Camiseta Dry Fit Masculina",
+    href: "#",
+    price: "R$59,90",
+    imageSrc: "/2.png",
+    imageAlt: "Camiseta dry fit leve e respirável para treinos intensos.",
+  },
+  {
+    id: 3,
+    name: "Legging Fitness Feminina Compressão",
+    href: "#",
+    price: "R$79,90",
+    imageSrc: "/3.png",
+    imageAlt: "Legging de alta compressão ideal para treinos e corridas.",
+  },
+  {
+    id: 4,
+    name: "Pré-Treino Extreme Energy 300g",
+    href: "#",
+    price: "R$99,90",
+    imageSrc: "/4.png",
+    imageAlt: "Pote de pré-treino para energia e foco máximos durante o treino.",
+  },
+  {
+    id: 5,
+    name: "Top Esportivo de Suporte Médio",
+    href: "#",
+    price: "R$49,90",
+    imageSrc: "/5.png",
+    imageAlt: "Top confortável com sustentação ideal para atividades físicas.",
+  },
+  {
+    id: 6,
+    name: "Garrafa Térmica Inox 1L",
+    href: "#",
+    price: "R$39,90",
+    imageSrc: "/6.png",
+    imageAlt: "Garrafa de inox ideal para manter a hidratação no treino.",
+  },
+  {
+    id: 7,
+    name: "Cinta Abdominal de Neoprene",
+    href: "#",
+    price: "R$34,90",
+    imageSrc: "/7.png",
+    imageAlt: "Cinta de neoprene para suporte lombar e queima calórica.",
+  },
+  {
+    id: 8,
+    name: "Kit Faixas Elásticas de Treinamento",
+    href: "#",
+    price: "R$69,90",
+    imageSrc: "/8.png",
+    imageAlt: "Conjunto de faixas elásticas para treino funcional e mobilidade.",
+  },
+];
