@@ -1,0 +1,140 @@
+.meus-termos-container {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .meus-termos-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .meus-termos-table-wrapper {
+    overflow-x: auto;
+  }
+  
+  .meus-termos-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .meus-termos-table th,
+  .meus-termos-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .status-aceito {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status-pendente {
+    color: goldenrod;
+    font-weight: bold;
+  }
+  
+  .meus-termos-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .btn-aceitar {
+    background-color: rgb(0, 162, 255);
+    color: black;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-recusar {
+    background-color: #e0e0e0;
+    color: black;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-aceitar:hover {
+    background-color: #4400ff;
+  }
+  
+  .btn-recusar:hover {
+    background-color: #d5d5d5;
+  }
+
+  .btn-ver {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 4px;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal {
+    background: white;
+    padding: 2rem;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000033;
+    position: relative;
+  }
+  
+  .modal h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+  
+  .modal-detalhes {
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 1rem;
+  }
+  
+  .modal-conteudo {
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-fechar {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .btn-fechar:hover {
+    background-color: #222;
+  }
+  
+  

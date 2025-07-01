@@ -1,0 +1,84 @@
+.perfil-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    color: #000000;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .perfil-container h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 25px;
+  }
+  
+  .perfil-form label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 16px;
+    font-weight: bold;
+  }
+  
+  .perfil-form input[type="text"],
+  .perfil-form input[type="email"],
+  .perfil-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .perfil-form input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .perfil-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .perfil-form button:hover {
+    background-color: #0055aa;
+  }
+  
+  .perfil-message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  .perfil-delete-button {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .perfil-logout-button {
+    margin-top: 10px;
+    width: 100%;
+    background-color: transparent;
+    color: #003366;
+    border: 2px solid #003366;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

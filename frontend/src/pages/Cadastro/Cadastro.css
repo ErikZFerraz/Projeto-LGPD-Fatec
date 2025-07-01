@@ -1,0 +1,59 @@
+.cadastro-container {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: "Segoe UI", sans-serif;
+    color: #000;
+  }
+  
+  .cadastro-container h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 25px;
+  }
+  
+  .cadastro-container label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  
+  .cadastro-container input[type="text"],
+  .cadastro-container input[type="email"],
+  .cadastro-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .cadastro-container input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .cadastro-container a {
+    color: #003366;
+    text-decoration: underline;
+  }
+  
+  .cadastro-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cadastro-container button:hover {
+    background-color: #0055aa;
+  }
+  
